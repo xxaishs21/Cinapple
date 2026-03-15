@@ -1,0 +1,26 @@
+title,genre,action,humor,romance,emotion,intensity,duration,family_friendly,dark,liked
+Inception,sci-fi,8,2,1,6,9,148,0,7,1
+The Dark Knight,action,9,2,1,7,9,152,0,8,1
+Interstellar,sci-fi,7,1,2,9,8,169,0,6,1
+Titanic,romance,3,2,10,9,6,195,0,4,0
+The Hangover,comedy,2,9,2,3,6,100,0,2,1
+Toy Story,animation,3,8,1,7,4,81,1,1,1
+Shrek,animation,4,9,3,6,5,90,1,2,1
+The Conjuring,horror,4,1,1,5,9,112,0,9,0
+La La Land,musical,2,6,9,8,5,128,0,3,1
+Avengers: Endgame,action,10,6,2,8,10,181,0,5,1
+Frozen,animation,2,7,4,7,4,102,1,1,0
+Joker,drama,3,1,1,8,8,122,0,10,1
+Deadpool,action,8,9,3,5,8,108,0,5,1
+The Notebook,romance,1,2,10,9,4,123,0,2,0
+Mad Max: Fury Road,action,10,1,1,4,10,120,0,6,1
+Spider-Man: Into the Spider-Verse,animation,8,8,2,8,8,117,1,2,1
+Parasite,thriller,5,4,2,8,7,132,0,8,1
+Mean Girls,comedy,1,9,4,5,4,97,0,1,1
+The Godfather,drama,6,1,2,8,7,175,0,9,1
+Harry Potter and the Sorcerer's Stone,fantasy,6,7,2,7,6,152,1,3,1
+Twilight,fantasy,3,2,9,6,4,122,0,4,0
+Get Out,horror,5,3,1,7,8,104,0,8,1
+The Grand Budapest Hotel,comedy,2,8,3,6,4,99,0,2,1
+Coco,animation,2,7,3,10,4,105,1,1,1
+John Wick,action,9,1,1,4,9,101,0,7,1
