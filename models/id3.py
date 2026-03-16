@@ -1,3 +1,5 @@
+import math
+
 from utils.loadmovies import loadmovies 
 
 features = [
@@ -36,7 +38,7 @@ def conv_bool(v) :
 def conv_class_id3(f) : 
     movies = loadmovies(f) 
     conv_movies = []
-    for movies in movies 
+    for movies in movies :
         new_movie = {}
         
         for feat in features : 
@@ -50,8 +52,26 @@ def conv_class_id3(f) :
     
     return conv_movies
         
-def entro_shannon(): 
-    return 0
+def entro_shannon(S): 
+    like = 0 
+    no_like = 0
+    h = 0 
+    
+    if S == [] : 
+        return 0
+    
+    else : 
+        for movie in S : 
+            like = like + movie["liked"]
+        no_like = len(S) - like 
+
+        if like == 0 or no_like == 0 : 
+            return 0
+        
+        h = h - ((like/len(S)) * math.log2(like/len(S))) - ((no_like/len(S)) * math.log2(no_like/len(S)))
+    
+    return h 
+
 
 def gain_info(): 
     return 0
