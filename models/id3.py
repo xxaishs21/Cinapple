@@ -1,8 +1,5 @@
 import math
-
 from utils.loadmovies import loadmovies 
-
-
 
 features = [
     "action",
@@ -79,11 +76,9 @@ def gain_info(S, a):
     s = 0
     ssens =  {}
 
-    
     if S == [] : 
         return 0
         
-
     for movie in S : 
         val = movie[a]
         if val not in ssens : 
@@ -116,7 +111,7 @@ def maj_class(S) :
     if like >= no_like : 
         return 1 
     else : 
-        return false 
+        return 0 
 
 def best_att(S, A) : 
     battr = A[0]
@@ -131,10 +126,53 @@ def best_att(S, A) :
     return battr
 
 def id3(S, A): 
-    if 
+    if S == [] : 
+        return {"type" : "leaf", "class": 0}
+    
+    if mm_class(S) : 
+        return {"type" : "leaf", "class": S[0]["liked"]}
+    
+    if A == [] : 
+        return{"type": "leaf", "class": maj_class(S)}
+    
+    a = best_att(S, A)
     
     tree = {
-        "type" : "noeud",
-        "attribut": a, 
-        "enfants": {}
+        "type" : "node",
+        "attribute": a, 
+        "children": {}
     }
+    
+    val = []
+    for movie in S : 
+        if movie[a] not in val : 
+            val.append(movie[a])
+    
+    newA = []
+    for attr in A : 
+        if attr != a : 
+            newA.append(attr)
+    
+    for v in val : 
+        Sv = []
+        for movie in S: 
+            if movie[a] == v: 
+                Sv.append(movie)
+        
+        tree["children"][v] = id3(Sv, newA)
+    
+    return tree
+
+def print_tree(tree, indent=""):
+    if tree["type"] == "leaf":
+        if tree["class"] == 1:
+            print(indent + "-> aimé")
+        else:
+            print(indent + "-> pas aimé")
+        return
+
+    print(indent + "[" + tree["attribute"] + "]")
+
+    for value, child in tree["children"].items():
+        print(indent + "  " + str(value) + " :")
+        print_tree(child, indent + "    ")
