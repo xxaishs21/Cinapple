@@ -176,3 +176,22 @@ def print_tree(tree, indent=""):
     for value, child in tree["children"].items():
         print(indent + "  " + str(value) + " :")
         print_tree(child, indent + "    ")
+
+def predict_id3(tree, movie): 
+    if tree["type"] == "leaf" : 
+        return tree["class"]
+    
+    value = movie[tree["attribute"]]
+    
+    if value not in tree["children"] : 
+        return None 
+    
+    return predict_id3(tree["children"][value], movie)
+
+def affiche_classe(c):
+    if c == 1 : 
+        return "aimé"
+    elif c == 0 : 
+        return "pas aimé"
+    else : 
+        return "inconnu"

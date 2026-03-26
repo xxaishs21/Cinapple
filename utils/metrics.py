@@ -13,8 +13,8 @@ features = [
 
 def distance(a, b):
     d = 0
-    for feature in features:
-        z = b[feature] - a[feature]
+    for i in range(len(a)):
+        z = b[i] - a[i]
         d = d + z * z
 
     return math.sqrt(d)

@@ -12,7 +12,6 @@ movies_id3 = conv_class_id3()
 print(gain_info(movies_id3, "action"))
 print(gain_info(movies_id3, "duration"))
 print(gain_info(movies_id3, "family_friendly"))
-"""
 
 movies_id3 = conv_class_id3()
 A = [
@@ -27,3 +26,14 @@ A = [
 ]
 tree = id3(movies_id3, A)
 print_tree(tree)
+"""
+
+movies_id3 = conv_class_id3()
+tree = id3(movies_id3, features)
+
+print_tree(tree)
+
+x = movies_id3[0]
+print("Film testé :", x)
+print("Classe réelle :", affiche_classe(x["liked"]))
+print("Classe prédite :", affiche_classe(predict_id3(tree, x)))
