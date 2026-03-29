@@ -1,6 +1,10 @@
-import streamlit as st
+import sys
+import os
+sys.path.append(os.path.dirname(os.path.dirname(__file__)))
 
-from pages import home, page_knn, page_id3, page_kmoy
+
+import streamlit as st
+from my_pages import home, page_knn, page_id3, page_kmoy
 
 st.set_page_config(
     page_title="Cinapple",
