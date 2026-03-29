@@ -4,13 +4,21 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(__file__))))
 
 import streamlit as st
 from utils.loadmovies import loadmovies
+from utils.loaduserdata import load_user_data
 from models.knn import kNN
 
 st.title("Recommandation k-NN")
-
 movies = loadmovies()
 
-# sliders
+if mode == "Base fixe":
+    movies = loadmovies()
+else:
+    movies = load_user_data()
+
+    if len(movies) < 5:
+        st.warning("Ajoute des films dans 'Base utilisateur'")
+        st.stop()
+
 action = st.slider("Action", 0, 10)
 humor = st.slider("Humour", 0, 10)
 romance = st.slider("Romance", 0, 10)
@@ -24,7 +32,6 @@ k = st.slider("k", 1, 10)
 
 if st.button("Prédire"):
 
-    # 👉 vect utilisateur = LISTE
     vect = [
         action,
         humor,
@@ -36,7 +43,6 @@ if st.button("Prédire"):
         dark
     ]
 
-    # 👉 base = LISTES
     Z = []
     for m in movies:
         Z.append({
@@ -66,3 +72,4 @@ if st.button("Prédire"):
     likes = sum(m["liked"] for m in movies)
     st.write("Films aimés :", likes)
     st.write("Total :", len(movies))
+    
