@@ -1,26 +1,58 @@
 title,genre,action,humor,romance,emotion,intensity,duration,family_friendly,dark,liked
-Inception,sci-fi,8,2,1,6,9,148,0,7,1
-The Dark Knight,action,9,2,1,7,9,152,0,8,1
-Interstellar,sci-fi,7,1,2,9,8,169,0,6,1
-Titanic,romance,3,2,10,9,6,195,0,4,0
-The Hangover,comedy,2,9,2,3,6,100,0,2,1
-Toy Story,animation,3,8,1,7,4,81,1,1,1
-Shrek,animation,4,9,3,6,5,90,1,2,1
-The Conjuring,horror,4,1,1,5,9,112,0,9,0
-La La Land,musical,2,6,9,8,5,128,0,3,1
-Avengers: Endgame,action,10,6,2,8,10,181,0,5,1
-Frozen,animation,2,7,4,7,4,102,1,1,0
-Joker,drama,3,1,1,8,8,122,0,10,1
-Deadpool,action,8,9,3,5,8,108,0,5,1
-The Notebook,romance,1,2,10,9,4,123,0,2,0
-Mad Max: Fury Road,action,10,1,1,4,10,120,0,6,1
-Spider-Man: Into the Spider-Verse,animation,8,8,2,8,8,117,1,2,1
-Parasite,thriller,5,4,2,8,7,132,0,8,1
-Mean Girls,comedy,1,9,4,5,4,97,0,1,1
-The Godfather,drama,6,1,2,8,7,175,0,9,1
-Harry Potter and the Sorcerer's Stone,fantasy,6,7,2,7,6,152,1,3,1
-Twilight,fantasy,3,2,9,6,4,122,0,4,0
-Get Out,horror,5,3,1,7,8,104,0,8,1
-The Grand Budapest Hotel,comedy,2,8,3,6,4,99,0,2,1
-Coco,animation,2,7,3,10,4,105,1,1,1
-John Wick,action,9,1,1,4,9,101,0,7,1
+Inception,SF,9,2,2,7,9,148,0,7,1
+Interstellar,SF,7,1,3,9,8,169,0,8,1
+TheDarkKnight,Action,9,2,2,6,9,152,0,9,1
+AvengersEndgame,Action,10,6,3,8,9,181,1,3,1
+IronMan,Action,8,7,3,6,7,126,1,3,1
+SpiderManNoWayHome,Action,9,7,5,8,8,148,1,3,1
+GuardiansGalaxy,Action,8,9,4,7,7,121,1,2,1
+BlackPanther,Action,8,6,3,7,7,134,1,3,1
+ThorRagnarok,Action,8,9,3,6,7,130,1,2,1
+CaptainAmerica,Action,7,5,2,6,7,124,1,3,1
+Frozen,Animation,2,7,6,7,2,102,1,1,1
+Moana,Animation,3,7,4,7,3,107,1,1,1
+LionKing,Animation,3,6,5,9,4,88,1,2,1
+BeautyAndTheBeast,Animation,2,6,8,8,3,84,1,1,1
+Aladdin,Animation,3,8,6,7,3,90,1,1,1
+ToyStory,Animation,3,9,4,7,3,90,1,1,1
+Up,Animation,2,6,3,9,2,96,1,1,1
+Coco,Animation,3,7,4,9,3,105,1,1,1
+FindingNemo,Animation,3,6,2,8,3,100,1,1,1
+Cars,Animation,4,6,2,5,3,117,1,1,1
+HarryPotter1,Fantasy,6,5,4,7,6,152,1,2,1
+LordOfTheRings,Fantasy,8,2,3,8,8,178,0,5,1
+JurassicPark,Aventure,8,3,2,6,8,127,1,4,1
+Avatar,SF,7,3,5,8,7,162,1,3,1
+Titanic,Romance,2,3,9,9,4,195,1,2,1
+Twilight,Romance,2,3,8,6,3,122,1,4,0
+FiftyShades,Romance,1,2,9,4,3,125,0,5,0
+TheRoom,Drame,1,1,5,2,1,99,0,4,0
+Cats,Musical,1,2,3,2,1,110,1,4,0
+Morbius,Action,4,2,1,3,4,104,0,6,0
+BatmanVsSuperman,Action,6,2,2,4,7,152,0,7,0
+SuicideSquad,Action,6,4,2,4,6,123,0,6,0
+TransformersLastKnight,Action,7,3,1,3,8,154,0,6,0
+FastAndFurious9,Action,8,5,2,4,8,145,1,5,0
+AfterEarth,SF,3,1,1,2,3,100,0,5,0
+DragonballEvolution,Action,4,2,1,2,5,85,0,5,0
+PercyJackson2,Fantasy,5,4,3,4,5,106,1,4,0
+Eragon,Fantasy,4,2,3,3,4,104,1,4,0
+GreenLantern,Action,5,3,2,3,5,114,0,5,0
+FantasticFour2015,Action,4,2,2,3,4,100,0,5,0
+EmojiMovie,Animation,2,4,2,2,2,86,1,2,0
+Minions2,Animation,3,6,1,3,3,87,1,2,0
+Sharknado,Action,5,3,1,2,6,86,0,6,0
+ScaryMovie5,Comedie,3,5,1,2,3,86,0,3,0
+AfterWeCollided,Romance,2,3,8,4,3,105,1,4,0
+365Days,Romance,2,2,9,3,3,114,0,6,0
+TheKissingBooth,Romance,2,5,7,5,3,105,1,3,0
+Joker,Drame,4,1,1,8,7,122,0,10,1
+Parasite,Drame,5,2,2,9,6,132,0,9,1
+FightClub,Drame,6,3,2,8,7,139,0,9,1
+Whiplash,Drame,5,1,1,9,7,106,0,8,1
+TheSocialNetwork,Drame,4,2,1,7,5,120,0,6,1
+LaLaLand,Musical,2,6,8,8,3,128,1,2,1
+TheGreatestShowman,Musical,3,7,6,7,4,105,1,2,1
+Encanto,Animation,2,7,5,7,2,102,1,1,1
+Ratatouille,Animation,2,7,3,8,2,111,1,1,1
+InsideOut,Animation,2,6,3,9,2,95,1,1,1

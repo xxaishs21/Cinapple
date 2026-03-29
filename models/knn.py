@@ -5,19 +5,17 @@ def kNN(Z, k, x) :
     
     distances = []
     for y in Z :
-        distances.append([distance(x, y), y["title"], y["liked"]])
+        distances.append([distance(x, y["vect"]), y["title"], y["liked"]])
     distances.sort()
     
     classe_yes = 0
     classe_no = 0
     for i in range(k) : 
-        if distances[i][2] == 1 :
-            classe_yes += 1
-        else : 
-            classe_no += 1
-    
-    if classe_yes >= classe_no : 
-        return 1
-    else : 
-        return 0
-    
+        dist = distances[i][0]
+        if distances[i][2] == 1:
+            classe_yes += 1 / (dist + 0.0001)
+        else:
+            classe_no += 1 / (dist + 0.0001)
+            
+    # moyenne des distances des k voisins
+    return (sum(d[0] for d in distances[:k]) / k)
