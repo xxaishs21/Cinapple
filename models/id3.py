@@ -34,21 +34,26 @@ def conv_bool(v) :
     else : 
         return "non"
 
-def conv_class_id3() : 
-    movies = loadmovies() 
+def conv_class_id3():
+    movies = loadmovies()
     conv_movies = []
-    for movie in movies :
-        new_movie = {}
-        
-        for feat in features : 
-            new_movie[feat] = conv(movie[feat])
 
+    for movie in movies:
+        new_movie = {}
+
+        new_movie["title"] = movie["title"]
+        new_movie["action"] = conv(movie["action"])
+        new_movie["humor"] = conv(movie["humor"])
+        new_movie["romance"] = conv(movie["romance"])
+        new_movie["emotion"] = conv(movie["emotion"])
+        new_movie["intensity"] = conv(movie["intensity"])
         new_movie["duration"] = conv_duration(movie["duration"])
         new_movie["family_friendly"] = conv_bool(movie["family_friendly"])
+        new_movie["dark"] = conv(movie["dark"])
         new_movie["liked"] = movie["liked"]
-        
+
         conv_movies.append(new_movie)
-    
+
     return conv_movies
         
 def entro_shannon(S): 

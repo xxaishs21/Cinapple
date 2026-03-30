@@ -4,10 +4,13 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(__file__))))
 
 import streamlit as st
 from utils.loadmovies import loadmovies
-from utils.loaduserdata import load_user_data
+from utils.loadusermovies import load_user_data
 from models.knn import kNN
 
 st.title("Recommandation k-NN")
+st.write("Cette page utilisera l'algorithme des k plus proches voisins (k-NN).")
+
+mode = st.selectbox("Choix de la base", ["Base fixe", "Base utilisateur"])
 movies = loadmovies()
 
 if mode == "Base fixe":
@@ -16,7 +19,7 @@ else:
     movies = load_user_data()
 
     if len(movies) < 5:
-        st.warning("Ajoute des films dans 'Base utilisateur'")
+        st.warning("Ajoute des films dans Base utilisateur pour continuer")
         st.stop()
 
 action = st.slider("Action", 0, 10)
