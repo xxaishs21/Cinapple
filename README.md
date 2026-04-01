@@ -4,6 +4,7 @@ Ce projet a été concu pour comparer plusieurs approches d'apprentissage superv
 
 ## Objectif 
 Je me propose de : 
+- permettre dde faire une base de donnée personnalisé ; 
 - prédire si un film peut etre aimé ou non ;
 - guider le choix d'un film selon les envies ;
 - regrouper des films selon leur ressemblance.
