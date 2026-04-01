@@ -2,7 +2,7 @@
 Cinapple est une application de recommandation de films qui analyse les goûts d’un utilisateur à partir de plusieurs caractéristiques. Elle permet de prédire si un film peut lui plaire, de trouver un film à partir de réponses à des questions et de regrouper les films selon leurs ressemblances grâce à plusieurs algorithmes d’apprentissage automatique.
 Ce projet a été concu pour comparer plusieurs approches d'apprentissage supervisé et non supervisé sur une meme base de films. Il sert à la fois d'outils de recommandation et de support pédagogique pour mieux comprendre le fonctionnement des algorithmes.
 
-##Objectif 
+## Objectif 
 Je me propose de : 
 - prédire si un film peut etre aimé ou non ;
 - guider le choix d'un film selon les envies ;
