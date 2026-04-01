@@ -38,7 +38,7 @@ st.write(
 st.write(
     """
     **ID3** : 
-    \nConstruit un arbre de decision pour oreinter l'utilisateur dans le choix d'un film.
+    \nConstruit un arbre de decision pour orienter l'utilisateur dans le choix d'un film.
     """
 )
 
