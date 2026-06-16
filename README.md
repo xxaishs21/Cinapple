@@ -35,17 +35,17 @@ Pour la partie arbre de décision, les ressources de scikit-learn consacrées au
 
 La partie consacrée au regroupement automatique des films s’appuie sur les ressources de scikit-learn relatives au clustering et à l’algorithme k-means. Elles décrivent le principe du partitionnement en groupes autour de centroïdes, ainsi que l’objectif d’inertie minimisée à l’intérieur des clusters. Elles rappellent également que l’algorithme est rapide en pratique mais sensible aux minima locaux, ce qui éclaire les choix faits dans le projet concernant l’initialisation des centres et les itérations successives jusqu’à stabilisation. [3]
 
-La mise en forme de l’application s’appuie enfin sur la documentation officielle de Streamlit. Celle-ci présente à la fois la création d’applications multipages et les différentes façons d’organiser la navigation entre plusieurs vues. Ces ressources ont été particulièrement utiles pour structurer Cinapple en plusieurs pages distinctes — accueil, recommandation, conseiller, regroupement — tout en conservant une interface simple et lisible. [4]
+La mise en forme de l’application s’appuie enfin sur la documentation officielle de Streamlit. Celle-ci présente à la fois la création d’applications multipages et les différentes façons d’organiser la navigation entre plusieurs vues. Ces ressources ont été particulièrement utiles pour structurer Cinapple en plusieurs pages distinctes (accueil, recommandation, conseiller, regroupement) tout en conservant une interface simple et lisible. [4]
 
 ### Références
 
-- [1] **scikit-learn** — *Nearest Neighbors* : https://scikit-learn.org/stable/modules/neighbors.html
-- [2] **scikit-learn** — *KNeighborsClassifier* : https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KNeighborsClassifier.html
-- [3] **scikit-learn** — *Decision Trees* : https://scikit-learn.org/stable/modules/tree.html
-- [4] **scikit-learn** — *DecisionTreeClassifier* : https://scikit-learn.org/stable/modules/generated/sklearn.tree.DecisionTreeClassifier.html
-- [5] **scikit-learn** — *Understanding the decision tree structure* : https://scikit-learn.org/stable/auto_examples/tree/plot_unveil_tree_structure.html
-- [6] **scikit-learn** — *Clustering* : https://scikit-learn.org/stable/modules/clustering.html
-- [7] **scikit-learn** — *KMeans* : https://scikit-learn.org/stable/modules/generated/sklearn.cluster.KMeans.html
-- [8] **Streamlit Docs** — *Create a multipage app* : https://docs.streamlit.io/get-started/tutorials/create-a-multipage-app
-- [9] **Streamlit Docs** — *Overview of multipage apps* : https://docs.streamlit.io/develop/concepts/multipage-apps/overview
-- [10] **Streamlit Docs** — *Creating multipage apps using the `pages/` directory* : https://docs.streamlit.io/develop/concepts/multipage-apps/pages-directory
+- [1] **scikit-learn** - *Nearest Neighbors* : https://scikit-learn.org/stable/modules/neighbors.html
+- [2] **scikit-learn** - *KNeighborsClassifier* : https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KNeighborsClassifier.html
+- [3] **scikit-learn** - *Decision Trees* : https://scikit-learn.org/stable/modules/tree.html
+- [4] **scikit-learn** - *DecisionTreeClassifier* : https://scikit-learn.org/stable/modules/generated/sklearn.tree.DecisionTreeClassifier.html
+- [5] **scikit-learn** - *Understanding the decision tree structure* : https://scikit-learn.org/stable/auto_examples/tree/plot_unveil_tree_structure.html
+- [6] **scikit-learn** - *Clustering* : https://scikit-learn.org/stable/modules/clustering.html
+- [7] **scikit-learn** - *KMeans* : https://scikit-learn.org/stable/modules/generated/sklearn.cluster.KMeans.html
+- [8] **Streamlit Docs** - *Create a multipage app* : https://docs.streamlit.io/get-started/tutorials/create-a-multipage-app
+- [9] **Streamlit Docs** - *Overview of multipage apps* : https://docs.streamlit.io/develop/concepts/multipage-apps/overview
+- [10] **Streamlit Docs** - *Creating multipage apps using the `pages/` directory* : https://docs.streamlit.io/develop/concepts/multipage-apps/pages-directory
