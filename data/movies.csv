@@ -1,58 +1,31 @@
-title,genre,action,humor,romance,emotion,intensity,duration,family_friendly,dark,liked,image
-Inception,SF,9,2,2,7,9,148,0,7,1,https://image.tmdb.org/t/p/w500/xlaY2zyzMfkhk0HSC5VUwzoZPU1.jpg
-Interstellar,SF,7,1,3,9,8,169,0,8,1,https://image.tmdb.org/t/p/w500/yQvGrMoipbRoddT0ZR8tPoR7NfX.jpg
-TheDarkKnight,Action,9,2,2,6,9,152,0,9,1,
-AvengersEndgame,Action,10,6,3,8,9,181,1,3,1,
-IronMan,Action,8,7,3,6,7,126,1,3,1,https://image.tmdb.org/t/p/w500/pnLopkBeVGd0v77gpTNdPqQESUs.jpg
-SpiderManNoWayHome,Action,9,7,5,8,8,148,1,3,1,https://image.tmdb.org/t/p/w500/e2LLmI5wKIrWGAy9Of3yyWu7Szn.jpg
-GuardiansGalaxy,Action,8,9,4,7,7,121,1,2,1,https://image.tmdb.org/t/p/w500/r2J02Z2OpNTctfOSN1Ydgii51I3.jpg
-BlackPanther,Action,8,6,3,7,7,134,1,3,1,https://image.tmdb.org/t/p/w500/j0iy21769EBamGyrN6UL1mCtW9F.jpg
-ThorRagnarok,Action,8,9,3,6,7,130,1,2,1,https://image.tmdb.org/t/p/w500/rzRwTcFvttcN1ZpX2xv4j3tSdJu.jpg
-CaptainAmerica,Action,7,5,2,6,7,124,1,3,1,
-Frozen,Animation,2,7,6,7,2,102,1,1,1,https://image.tmdb.org/t/p/w500/itAKcobTYGpYT8Phwjd8c9hleTo.jpg
-Moana,Animation,3,7,4,7,3,107,1,1,1,https://image.tmdb.org/t/p/w500/zKVgiv5qHCvCLT4A2ymJi5QeXDH.jpg
-LionKing,Animation,3,6,5,9,4,88,1,2,1,
-BeautyAndTheBeast,Animation,2,6,8,8,3,84,1,1,1,
-Aladdin,Animation,3,8,6,7,3,90,1,1,1,https://image.tmdb.org/t/p/w500/eLFfl7vS8dkeG1hKp5mwbm37V83.jpg
-ToyStory,Animation,3,9,4,7,3,90,1,1,1,
-Up,Animation,2,6,3,9,2,96,1,1,1,https://image.tmdb.org/t/p/w500/xwvJ3WzdJ1OCuDoY8LAxBUlQyig.jpg
-Coco,Animation,3,7,4,9,3,105,1,1,1,https://image.tmdb.org/t/p/w500/6Ryitt95xrO8KXuqRGm1fUuNwqF.jpg
-FindingNemo,Animation,3,6,2,8,3,100,1,1,1,https://image.tmdb.org/t/p/w500/em724CmoRutJ2QkjAKuW0Y7a5i5.jpg
-Cars,Animation,4,6,2,5,3,117,1,1,1,https://image.tmdb.org/t/p/w500/oloVyeBbkVGbFFaUjR8I7Boo7wA.jpg
-HarryPotter1,Fantasy,6,5,4,7,6,152,1,2,1,
-LordOfTheRings,Fantasy,8,2,3,8,8,178,0,5,1,
-JurassicPark,Aventure,8,3,2,6,8,127,1,4,1,https://image.tmdb.org/t/p/w500/16zyqB62RulJvDHqNVKHA0KMNYd.jpg
-Avatar,SF,7,3,5,8,7,162,1,3,1,https://image.tmdb.org/t/p/w500/gKY6q7SjCkAU6FqvqWybDYgUKIF.jpg
-Titanic,Romance,2,3,9,9,4,195,1,2,1,https://image.tmdb.org/t/p/w500/9xjZS2rlVxm8SFx8kPC3aIGCOYQ.jpg
-Twilight,Romance,2,3,8,6,3,122,1,4,0,https://image.tmdb.org/t/p/w500/3Gkb6jm6962ADUPaCBqzz9CTbn9.jpg
-FiftyShades,Romance,1,2,9,4,3,125,0,5,0,https://image.tmdb.org/t/p/w500/tB8B4TGjQEfBkT7zcBVVMASpioq.jpg
-TheRoom,Drame,1,1,5,2,1,99,0,4,0,
-Cats,Musical,1,2,3,2,1,110,1,4,0,https://image.tmdb.org/t/p/w500/aCNch5FmzT2WaUcY44925owIZXY.jpg
-Morbius,Action,4,2,1,3,4,104,0,6,0,https://image.tmdb.org/t/p/w500/Av8Z2jZhEm1FLkFzMThzz9hndJF.jpg
-BatmanVsSuperman,Action,6,2,2,4,7,152,0,7,0,https://image.tmdb.org/t/p/w500/lr1xsc8Wz3d3SBQ0Z959miynsit.jpg
-SuicideSquad,Action,6,4,2,4,6,123,0,6,0,https://image.tmdb.org/t/p/w500/7rfdBBauJWI0oo5HWOac5h8l39J.jpg
-TransformersLastKnight,Action,7,3,1,3,8,154,0,6,0,https://image.tmdb.org/t/p/w500/s5HQf2Gb3lIO2cRcFwNL9sn1o1o.jpg
-FastAndFurious9,Action,8,5,2,4,8,145,1,5,0,https://image.tmdb.org/t/p/w500/deEmLILTPejEb6OGsXRJ5MCvyDW.jpg
-AfterEarth,SF,3,1,1,2,3,100,0,5,0,https://image.tmdb.org/t/p/w500/mZoKhdTw1GWrrWxhZ1S1QQsXTMd.jpg
-DragonballEvolution,Action,4,2,1,2,5,85,0,5,0,https://image.tmdb.org/t/p/w500/ztlqrY7VgFIFmtzVsh3TPYiXCdF.jpg
-PercyJackson2,Fantasy,5,4,3,4,5,106,1,4,0,https://image.tmdb.org/t/p/w500/tAu90qEpLqwqiZLsMqpaMVr55oN.jpg
-Eragon,Fantasy,4,2,3,3,4,104,1,4,0,https://image.tmdb.org/t/p/w500/mNu6QLUnKqPIjRA3pgEb5dkJye6.jpg
-GreenLantern,Action,5,3,2,3,5,114,0,5,0,https://image.tmdb.org/t/p/w500/uGzjYovZBUkpAIl7dg9vqnIVINs.jpg
-FantasticFour2015,Action,4,2,2,3,4,100,0,5,0,https://image.tmdb.org/t/p/w500/cDroz5qSlP8xZ6tOpeYoPkBvKyL.jpg
-EmojiMovie,Animation,2,4,2,2,2,86,1,2,0,https://image.tmdb.org/t/p/w500/60bTx5z9zL1AqCjZ0gmWoRMJ6Bb.jpg
-Minions2,Animation,3,6,1,3,3,87,1,2,0,https://image.tmdb.org/t/p/w500/sULvm9EK2bpvuRtc57crvJrAXyu.jpg
-Sharknado,Action,5,3,1,2,6,86,0,6,0,https://image.tmdb.org/t/p/w500/atEmHkVFTSGRYt2PeCiziQqbZnI.jpg
-ScaryMovie5,Comedie,3,5,1,2,3,86,0,3,0,https://image.tmdb.org/t/p/w500/vBqLLxE6GaAPhO6v9EFvFbLZ7Ap.jpg
-AfterWeCollided,Romance,2,3,8,4,3,105,1,4,0,https://image.tmdb.org/t/p/w500/kiX7UYfOpYrMFSAGbI6j1pFkLzQ.jpg
-365Days,Romance,2,2,9,3,3,114,0,6,0,https://image.tmdb.org/t/p/w500/ap8pBWU5601uAQFoGWwurEo7Ugy.jpg
-TheKissingBooth,Romance,2,5,7,5,3,105,1,3,0,https://image.tmdb.org/t/p/w500/vcQNnnXgKLacoYF4LNWgkNiDXPd.jpg
-Joker,Drame,4,1,1,8,7,122,0,10,1,https://image.tmdb.org/t/p/w500/udDclJoHjfjb8Ekgsd4FDteOkCU.jpg
-Parasite,Drame,5,2,2,9,6,132,0,9,1,https://image.tmdb.org/t/p/w500/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg
-FightClub,Drame,6,3,2,8,7,139,0,9,1,https://image.tmdb.org/t/p/w500/hGbTleqOR52mIV33Lbm3Szj9fSY.jpg
-Whiplash,Drame,5,1,1,9,7,106,0,8,1,https://image.tmdb.org/t/p/w500/7fn624j5lj3xTme2SgiLCeuedmO.jpg
-TheSocialNetwork,Drame,4,2,1,7,5,120,0,6,1,
-LaLaLand,Musical,2,6,8,8,3,128,1,2,1,https://image.tmdb.org/t/p/w500/bI6TlKrBMQw5XGli1lzQF3Dalgq.jpg
-TheGreatestShowman,Musical,3,7,6,7,4,105,1,2,1,https://image.tmdb.org/t/p/w500/skZtt98A1rNlYt9qoSrLp0xThzQ.jpg
-Encanto,Animation,2,7,5,7,2,102,1,1,1,https://image.tmdb.org/t/p/w500/4j0PNHkMr5ax3IA8tjtxcmPU3QT.jpg
-Ratatouille,Animation,2,7,3,8,2,111,1,1,1,https://image.tmdb.org/t/p/w500/t3vaWRPSf6WjDSamIkKDs1iQWna.jpg
-InsideOut,Animation,2,6,3,9,2,95,1,1,1,https://image.tmdb.org/t/p/w500/hmeL9wiGNSLKORfibkMOemmntkQ.jpg
+tmdb_id,title,year,genre,action,humor,romance,emotion,intensity,duration,family_friendly,dark,liked,image
+1169516,Welcome to the Jungle,2026,Action,7,4,3,6,10,170,0,5,1,https://image.tmdb.org/t/p/w500/1JlfUuvvX5xLP2LIDah4JhWUtTx.jpg
+1392469,कॉकटेल २,2026,Romance,3,6,7,8,6,149,0,4,0,https://image.tmdb.org/t/p/w500/bW1tdWzyFusyuJJT1IOdjWtKCb8.jpg
+1084244,Toy Story 5,2026,Animation,6,7,2,6,6,102,1,1,1,https://image.tmdb.org/t/p/w500/b2bt3UomRX41rHHZmIsSNmXzidU.jpg
+1339713,Obsession,2026,Horreur,2,5,5,6,6,108,0,9,0,https://image.tmdb.org/t/p/w500/mDCR1frpUvGfIKksuM440VLb7X9.jpg
+1275779,Disclosure Day,2026,Science-Fiction,5,3,4,3,7,145,0,3,1,https://image.tmdb.org/t/p/w500/8GRMeKaDFnuzXBzqGiDMzCFDnwQ.jpg
+1083381,Backrooms,2026,Horreur,4,4,3,7,7,105,0,8,0,https://image.tmdb.org/t/p/w500/thQQ3BBBhGDtWm3UTtabhyDJd8U.jpg
+936075,Michael,2026,Musique,3,2,4,7,7,127,0,3,1,https://image.tmdb.org/t/p/w500/2sDgNilJGVFpl1x4DMzYHjk0L0f.jpg
+1081003,Supergirl,2026,Action,9,6,5,7,9,108,0,4,0,https://image.tmdb.org/t/p/w500/ptyTrUvaQYkRTj42t6IMeGc0rZy.jpg
+1127384,Deep Water,2026,Thriller,4,3,6,6,7,107,0,10,0,https://image.tmdb.org/t/p/w500/kjcuS7xaRyqRjVaVcH4t0qHshuX.jpg
+1301421,Les Moutons détectives,2026,Comédie,4,9,3,3,4,109,0,2,0,https://image.tmdb.org/t/p/w500/5GjWHaN6XW9RbeUqqYbzfKSThqX.jpg
+931285,Mortal Kombat II,2026,Action,8,4,5,3,8,116,0,3,1,https://image.tmdb.org/t/p/w500/yPkeeBEJdQO85AGCwi2XEIfMOxa.jpg
+1515729,Blast,2026,Drame,6,4,2,8,4,143,0,2,0,https://image.tmdb.org/t/p/w500/ho824aZtnBzE6FuJRn2znQCq4qQ.jpg
+1523145,Your Heart Will Be Broken,2026,Romance,6,4,9,7,7,134,0,3,1,https://image.tmdb.org/t/p/w500/iGpMm603GUKH2SiXB2S5m4sZ17t.jpg
+1239134,Bhooth Bangla,2026,Horreur,2,6,2,5,9,163,0,7,1,https://image.tmdb.org/t/p/w500/nDZdP9NBxvbIabDQflfhKXVTjnz.jpg
+1226293,Salitan,2024,Drame,4,4,4,8,6,105,0,2,1,https://image.tmdb.org/t/p/w500/rMgG7cWuq9O6zhhLs2CbqIKVA8V.jpg
+28322,Vacanze per un massacro,1980,Thriller,3,3,3,7,9,89,0,8,0,https://image.tmdb.org/t/p/w500/arRNmW27fs1TFsIBOwPYCfZQFJC.jpg
+1273221,Scary Movie,2026,Comédie,3,7,2,5,3,96,0,2,0,https://image.tmdb.org/t/p/w500/gIComZ1TfZdWmuD4L4mJ8sEv0km.jpg
+11012,Fatale,1992,Drame,6,4,2,10,3,111,0,4,1,https://image.tmdb.org/t/p/w500/b9Vx5fA8UgMGRkvh8TGg4k78mg.jpg
+1226863,"Super Mario Galaxy, le film",2026,Familial,2,7,2,6,5,100,1,2,1,https://image.tmdb.org/t/p/w500/aSQktALDmbunDbwkuZbZFMEWVFr.jpg
+614945,Si tu m'écoutes,2026,Romance,3,2,8,6,5,119,0,6,0,https://image.tmdb.org/t/p/w500/gqnv5448y3R5KAelvhapSKtiU5z.jpg
+1228710,The Mandalorian and Grogu,2026,Action,7,2,5,4,7,132,0,4,0,https://image.tmdb.org/t/p/w500/qkH4ntQtO5qnL17RFOvmkNHKpGt.jpg
+1280738,The Furious,2026,Action,7,4,5,6,9,113,0,4,1,https://image.tmdb.org/t/p/w500/94rNmtdyclSnO3OOnVBW2Isy9r0.jpg
+301528,Toy Story 4,2019,Familial,6,8,2,7,5,100,1,3,0,https://image.tmdb.org/t/p/w500/smFyhZHuOCZEmH0kfXOrJLC3Acx.jpg
+1304313,Le Réveil de la Momie,2026,Horreur,4,4,6,4,6,133,0,10,1,https://image.tmdb.org/t/p/w500/f77yGBGOjainowvlGHU70CCQrjV.jpg
+83533,Avatar : De feu et de cendres,2025,Science-Fiction,3,2,4,4,6,198,0,3,1,https://image.tmdb.org/t/p/w500/kG3N8oQ10qiw2MsnSHFGJpQNyEy.jpg
+1367220,கருப்பு,2026,Action,8,3,6,4,10,152,0,6,1,https://image.tmdb.org/t/p/w500/4KZXlZ5tTT6ghbW77gS4hSLkCd7.jpg
+1007757,Aventures croisées,2026,Aventure,9,6,6,3,10,102,0,2,1,https://image.tmdb.org/t/p/w500/gz64ZUKg4C4g1yfGD0o5opcBOKy.jpg
+1103473,ಕೆಡಿ - ದಿ ಡೆವಿಲ್,2026,Histoire,4,2,5,3,6,141,0,5,0,https://image.tmdb.org/t/p/w500/9cgwiPHZ57NjI0RKb2yIu8mUnNs.jpg
+1397385,Little Brother,2026,Comédie,3,7,5,7,7,101,0,2,1,https://image.tmdb.org/t/p/w500/hIJpXb7Xaje2mebN9ylsS7blQzP.jpg
+1477317,À contre-sens 2 : Londres,2026,Romance,4,4,7,6,4,123,0,4,1,https://image.tmdb.org/t/p/w500/gWVO8FmD9onEYYsZU1LMJgRNTbm.jpg

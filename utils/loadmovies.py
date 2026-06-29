@@ -12,7 +12,9 @@ def loadmovies():
 
         for row in reader:
             movie = {
+                "tmdb_id": int(row["tmdb_id"]),
                 "title": row["title"],
+                "year": int(row["year"]) if row["year"] else 0,
                 "genre": row["genre"],
                 "action": int(row["action"]),
                 "humor": int(row["humor"]),

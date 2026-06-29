@@ -51,8 +51,8 @@ def conv_class_id3():
         new_movie["family_friendly"] = conv_bool(movie["family_friendly"])
         new_movie["dark"] = conv(movie["dark"])
         new_movie["liked"] = movie["liked"]
-        new_movie["image"] = movie["movie"]
-
+        new_movie["image"] = movie["image"]
+        
         conv_movies.append(new_movie)
 
     return conv_movies

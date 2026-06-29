@@ -29,9 +29,11 @@ def films_restants():
     for film in user_movies:
         titres_deja_notes.add(film["title"])
 
+    titres_passes = st.session_state.get("passed_titles", set())
+
     restants = []
     for film in all_movies:
-        if film["title"] not in titres_deja_notes:
+        if film["title"] not in titres_deja_notes and film["title"] not in titres_passes:
             restants.append(film)
 
     return restants
@@ -43,19 +45,27 @@ Pour une expérience personnalisée, avant d'utiliser les algorithmes, tu dois n
 Plus tu notes de films, plus les recommandations seront précises.
 """)
 
+if "passed_titles" not in st.session_state:
+    st.session_state["passed_titles"] = set()
+
 movies = films_restants()
 
 if movies == []:
     st.success("Tu as déjà parcouru tous les films disponibles.")
     st.stop()
 
-if "current_movie_index" not in st.session_state:
-    st.session_state.current_movie_index = random.randrange(len(movies))
+if "current_movie_title" not in st.session_state:
+    st.session_state["current_movie_title"] = random.choice(movies)["title"]
 
-if st.session_state.current_movie_index >= len(movies):
-    st.session_state.current_movie_index = random.randrange(len(movies))
+movie = None
+for f in movies:
+    if f["title"] == st.session_state["current_movie_title"]:
+        movie = f
+        break
 
-movie = movies[st.session_state.current_movie_index]
+if movie is None:
+    movie = random.choice(movies)
+    st.session_state["current_movie_title"] = movie["title"]
 
 st.subheader(movie["title"])
 afficher_affiche(movie, width=220)
@@ -69,10 +79,11 @@ with col1:
         save_movie(movie_copy)
 
         nouveaux_movies = films_restants()
-        if nouveaux_movies == []:
-            st.session_state.pop("current_movie_index", None)
+        if nouveaux_movies != []:
+            st.session_state["current_movie_title"] = random.choice(nouveaux_movies)["title"]
         else:
-            st.session_state.current_movie_index = random.randrange(len(nouveaux_movies))
+            st.session_state.pop("current_movie_title", None)
+
         st.rerun()
 
 with col2:
@@ -82,23 +93,29 @@ with col2:
         save_movie(movie_copy)
 
         nouveaux_movies = films_restants()
-        if nouveaux_movies == []:
-            st.session_state.pop("current_movie_index", None)
+        if nouveaux_movies != []:
+            st.session_state["current_movie_title"] = random.choice(nouveaux_movies)["title"]
         else:
-            st.session_state.current_movie_index = random.randrange(len(nouveaux_movies))
+            st.session_state.pop("current_movie_title", None)
+
         st.rerun()
 
 with col3:
     if st.button("⏭️ Pas vu"):
-        if len(movies) > 1:
-            nouvel_index = st.session_state.current_movie_index
-            while nouvel_index == st.session_state.current_movie_index:
-                nouvel_index = random.randrange(len(movies))
-            st.session_state.current_movie_index = nouvel_index
+        st.session_state["passed_titles"].add(movie["title"])
+
+        nouveaux_movies = films_restants()
+        if nouveaux_movies != []:
+            st.session_state["current_movie_title"] = random.choice(nouveaux_movies)["title"]
+        else:
+            st.session_state.pop("current_movie_title", None)
+
         st.rerun()
 
 if st.button("Réinitialiser mes données"):
     with open("data/user_movies.csv", "w", encoding="utf-8") as f:
         f.write("title,genre,action,humor,romance,emotion,intensity,duration,family_friendly,dark,liked,image\n")
-    st.session_state.pop("current_movie_index", None)
+
+    st.session_state["passed_titles"] = set()
+    st.session_state.pop("current_movie_title", None)
     st.rerun()
