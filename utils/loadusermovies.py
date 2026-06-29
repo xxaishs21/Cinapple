@@ -24,7 +24,8 @@ def load_user_data():
                 "duration": int(row["duration"]),
                 "family_friendly": int(row["family_friendly"]),
                 "dark": int(row["dark"]),
-                "liked": int(row["liked"])
+                "liked": int(row["liked"]),
+                "image": row["image"]
             }
             movies.append(movie)
 

@@ -3,7 +3,21 @@ import os
 sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(__file__))))
 
 import streamlit as st
+from pathlib import Path
 from models.id3 import conv_class_id3, id3, features
+
+ROOT = Path(__file__).resolve().parents[2]
+DEFAULT_POSTER = ROOT / "assets" / "pas_d_image_disponible.png"
+
+def afficher_affiche(film, width=160):
+    image = (film.get("image") or "").strip()
+
+    if image.startswith("http://") or image.startswith("https://"):
+        st.image(image, width=width)
+    elif image != "":
+        st.image(image, width=width)
+    else:
+        st.image(str(DEFAULT_POSTER), width=width)
 
 st.title("Conseiller ID3")
 st.write("Cette page utilise l'arbre de décision ID3.")
@@ -88,7 +102,8 @@ if node["type"] == "leaf":
         if bons_films != []:
             st.write("### Films conseillés")
             for film in bons_films[:5]:
-                st.write("- " + film["title"])
+                st.write("### " + film.get("title", "Titre inconnu"))
+                afficher_affiche(film, width=150)
         else:
             st.write("Aucun film exact trouvé dans la base pour ce profil.")
     else:
@@ -97,7 +112,8 @@ if node["type"] == "leaf":
         if candidats != []:
             st.write("### Films correspondant au profil")
             for film in candidats[:5]:
-                st.write("- " + film["title"])
+                st.write("### " + film.get("title", "Titre inconnu"))
+                afficher_affiche(film, width=150)
         else:
             st.write("Aucun film exact trouvé dans la base pour ce profil.")
 

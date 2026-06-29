@@ -60,3 +60,10 @@ st.write(
     Il sert à la fois d'outils de recommandation et de support pédagogique pour mieux comprendre le fonctionnement des algorithmes. 
     """
 )
+
+st.markdown("---")
+st.subheader("Crédits")
+
+st.image("assets/tmdb_logo.svg", width=180)
+
+st.caption("This product uses the TMDB API but is not endorsed or certified by TMDB.")
